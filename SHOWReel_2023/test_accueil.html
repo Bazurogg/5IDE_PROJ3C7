@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/accueil/style.css">
+    <title>Acceuil - Mr Robot</title>
+</head>
+<body>
+    <main>
+        <div class="mainbloc">
+            <figure>
+                <img src="./images/ElliotBG.jpg">
+                <p class="scrollcode">
+                    <span>
+                        #include <iostream>
+                            using namespace std;
+                            
+                            int main() {
+                                int t1 = 0, t2 = 1, nextTerm = 0, n;
+                            
+                                cout << "Enter a positive number: ";
+                                cin >> n;
+                            
+                                // displays the first two terms which is always 0 and 1
+                                cout << "Fibonacci Series: " << t1 << ", " << t2 << ", ";
+                            
+                                nextTerm = t1 + t2;
+                            
+                                while(nextTerm <= n) {
+                                    cout << nextTerm << ", ";
+                                    t1 = t2;
+                                    t2 = nextTerm;
+                                    nextTerm = t1 + t2;
+                                }
+                                return 0;
+                            }    
+                    </span>
+                </p>
+                <p class="scrollcode scrollcode">
+                    <span> #include <iostream>
+                        using namespace std;
+                        
+                        int main() {
+                            int t1 = 0, t2 = 1, nextTerm = 0, n;
+                        
+                            cout << "Enter a positive number: ";
+                            cin >> n;
+                        
+                            // displays the first two terms which is always 0 and 1
+                            cout << "Fibonacci Series: " << t1 << ", " << t2 << ", ";
+                        
+                            nextTerm = t1 + t2;
+                        
+                            while(nextTerm <= n) {
+                                cout << nextTerm << ", ";
+                                t1 = t2;
+                                t2 = nextTerm;
+                                nextTerm = t1 + t2;
+                            }
+                            return 0;
+                        } 
+                    </span>
+                </p>
+            </figure>
+        </div>
+    </main>
+</body>
+</html>

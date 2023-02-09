@@ -1,0 +1,27 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mainbloc{
+    width: 100%;
+}
+
+figure{
+    border: 1px solid red;
+}
+
+figure img{
+    vertical-align: top;
+}
+
+
+/*
+span{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+*/
