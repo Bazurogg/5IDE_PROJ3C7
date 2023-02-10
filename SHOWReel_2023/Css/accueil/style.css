@@ -5,16 +5,45 @@
 }
 
 .mainbloc{
+    /* border: 1px solid red; */
+}
+
+.BG{
+    position: fixed;
+}
+
+.Elliot{
+    width: 80%;
+    position: fixed;
+    top: 18%;
+    left: 10%;
+}
+
+.scrolltext{
+    display: flex;
+    overflow: hidden;
     width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
 }
 
-figure{
-    border: 1px solid red;
+.txt{
+    font-size: 250px;
+    white-space: nowrap;
+    animation: scrollTxt 3s linear infinite;
+
 }
 
-figure img{
-    vertical-align: top;
+@keyframes scrollTxt {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{ 
+        transform: translate(-100%, 0);
+    }
 }
+
 
 
 /*
