@@ -31,12 +31,22 @@ body{
     white-space: nowrap;
     font-size: 30px;
     font-family: 'Source Code Pro', monospace;
+    animation: Scroll 10s linear infinite;
 }
-/*
-span{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
+
+@keyframes Scroll {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
-*/
+
+/* .t2{
+    color:red;
+}
+
+.t3{
+    color:blue;
+} */
