@@ -4,48 +4,34 @@
     padding: 0;
 }
 
-.mainbloc{
-    /* border: 1px solid red; */
+body{
+    overflow-x: hidden;
+    position: relative;
 }
 
 .BG{
-    position: fixed;
+    width: 100%;
+
 }
 
-.Elliot{
-    width: 80%;
-    position: fixed;
-    top: 18%;
-    left: 10%;
+.BG img{
+    vertical-align: top;
+
 }
 
 .scrolltext{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
     position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    display: flex;
+    top:50%;
+    left:1px;
+    border: solid red 1px;
 }
 
 .txt{
-    font-size: 250px;
     white-space: nowrap;
-    animation: scrollTxt 3s linear infinite;
-
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
 }
-
-@keyframes scrollTxt {
-    0%{
-        transform: translate(0, 0);
-    }
-    100%{ 
-        transform: translate(-100%, 0);
-    }
-}
-
-
-
 /*
 span{
     font-family: 'Source Code Pro', monospace;
