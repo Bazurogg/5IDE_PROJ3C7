@@ -68,40 +68,7 @@ function generateRandomText(length) {
 
 
 
-// MESSAGE EXTENDS =============================================]
-
-const tooltipContainers = document.querySelectorAll('.tooltip-container');
-
-tooltipContainers.forEach(container => {
-    
-    const icon = container.querySelector('.pulse_icon'); // L'icône qui déclenche l'animation
-    const tooltipText = container.querySelector('.tooltip-text'); // Texte à révéler
-
-    const expandContainer = () => {
-        container.classList.add('expanded'); // Ajoute la classe pour élargir le conteneur
-        container.classList.add('hideseek');
-
-        tooltipText.style.opacity = "1";
-        icon.style.translate = "20px"
-    };
-
-    const collapseContainer = () => {
-        container.classList.remove('expanded'); // Retire la classe pour rétrécir le conteneur
-        container.classList.remove('hideseek');
-
-        tooltipText.style.opacity = "0";
-    };
-
-    // Survol de l'icône
-    icon.addEventListener('mouseover', expandContainer);
-    icon.addEventListener('mouseout', collapseContainer);
-
-    // Survol du texte
-    tooltipText.addEventListener('mouseover', expandContainer);
-    tooltipText.addEventListener('mouseout', collapseContainer);
-    
-
-});
+// HIDDEN MESSAGE  =============================================]
 
 
 
